@@ -1,0 +1,17 @@
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.o
+
+/build/
+/out/
+/cmake-build-debug/
+/cmake-build-release/
+
+.vs/
+.idea/
+*.vcxproj*
+*.sln
+*.user
