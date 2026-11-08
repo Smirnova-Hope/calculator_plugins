@@ -8,7 +8,7 @@ int main() {
     Calculator calculator;
     std::vector<SafeLibraryPtr> loadedHandles;
 
-    PluginManager::loadPlugins("plugins", [&calculator](const std::string& name, auto func) {
+    PluginManager::loadPlugins("plugins", [&calculator](const std::string& name, const auto& func) {
         calculator.registerFunction(name, func);
         }, loadedHandles);
 
