@@ -1,4 +1,3 @@
-#pragma once
 #include "plugin_manager.h"
 #include "plugin_api.h"
 #include <filesystem>
