@@ -1,6 +1,3 @@
-#pragma once
-
-
 #include "plugin_api.h"
 #include <cmath>
 
