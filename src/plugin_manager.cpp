@@ -11,7 +11,7 @@ void LibraryCloser::operator()(HMODULE hDll) const {
 }
 
 void PluginManager::loadPlugins(const std::string& pluginDir,
-    std::function<void(const std::string&, std::function<double(double)>)> registerCallback,
+    const std::function<void(const std::string&, const MathFunction&)>& registerCallback,
     std::vector<SafeLibraryPtr>& handles)
 {
     namespace fs = std::filesystem;
