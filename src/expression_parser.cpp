@@ -110,7 +110,7 @@ double Calculator::parseNumber() {
     return value;
 }
 
-void Calculator::registerFunction(const std::string& name, MathFunction func) {
+void Calculator::registerFunction(const std::string& name, const MathFunction& func) {
     functions[name] = func;
 }
 
