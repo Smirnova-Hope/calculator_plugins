@@ -22,6 +22,6 @@ private:
     double parseNumber();
 
 public:
-    void registerFunction(const std::string& name, MathFunction func);
+    void registerFunction(const std::string& name, const MathFunction& func);
     double calculate(const std::string& expression);
 };
