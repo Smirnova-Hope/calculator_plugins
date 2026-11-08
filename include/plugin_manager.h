@@ -14,6 +14,6 @@ using SafeLibraryPtr = std::unique_ptr<std::remove_pointer_t<HMODULE>, LibraryCl
 class PluginManager {
 public:
     static void loadPlugins(const std::string& pluginDir,
-        std::function<void(const std::string&, std::function<double(double)>)> registerCallback,
-        std::vector<SafeLibraryPtr>& handles);
+    const std::function<void(const std::string&, const MathFunction&)>& registerCallback,
+    std::vector<SafeLibraryPtr>& handles);
 };
